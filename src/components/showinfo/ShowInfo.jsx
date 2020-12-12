@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useData, valueTable, useGetIdCity } from "./useData.jsx";
+import { getData, getValueTable, getIdCity } from "./useData.js";
 
 function ShowInfo() {
   //ambil parameter url
@@ -8,18 +8,31 @@ function ShowInfo() {
   let { alamatTujuan } = useParams();
   let { berat } = useParams();
 
-  const idAlamatAsal = useGetIdCity(alamatAsal);
-  const idAlamatTujuan = useGetIdCity(alamatTujuan);
-  // const idBerat = parseInt(berat);
+  const [dataTable, setDataTable] = useState({name:"", layanan:[], tarif:[]});
 
-  const useDataTiki = useData(idAlamatAsal, idAlamatTujuan, berat, "tiki");
-  const useDataPos = useData(idAlamatAsal, idAlamatTujuan, berat, "pos");
-  const useDataJne = useData(idAlamatAsal, idAlamatTujuan, berat, "jne");
+  // const idAlamatAsal = getIdCity(alamatAsal);
+  // const idAlamatTujuan = getIdCity(alamatTujuan);
+  const idBerat = parseInt(berat);
+
+   useEffect(() => {
+     async function fetchData () {
+      try{
+           const hasil = await getData( alamatAsal, alamatTujuan, idBerat, "tiki")
+           setDataTable({name:hasil.name, layanan: hasil.layanan, tarif:hasil.layanan}) 
+                 
+      }catch(err){
+        console.log('error', err)
+      }
+    }
+    fetchData()
+    
+   },[])
 
   return (
     <div class="container py-5">
-      {console.log(idAlamatAsal)}
-      {/* {console.log(idBerat)} */}
+      {console.log("idalamatasal ", alamatAsal)}
+      {/* {console.log('datajne', dataJne)} */}
+      
       <table class="table table-hover">
         <thead>
           <tr>
@@ -28,10 +41,21 @@ function ShowInfo() {
             <th scope="col">Tarif</th>
           </tr>
         </thead>
-        <tbody>
-          {[useDataTiki, useDataPos, useDataJne].map((data) =>
+        <tbody id="target">
+          {/* {[useDataTiki, useDataPos, useDataJne].map((data) =>
             valueTable(data)
-          )}
+          )} */}
+          { console.log('firsttt')}
+             {
+             dataTable.layanan.map( (dataValue, key) => (
+            <tr>
+              <td>{ dataTable.name}</td>
+              <td>{ dataValue}</td>
+              <td>{ dataTable.tarif[key]}</td>
+            </tr>
+          ))
+          }
+                
         </tbody>
       </table>
     </div>
