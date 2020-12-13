@@ -13,7 +13,6 @@ const RouterItem = () => {
       <Router>
         <NavbarItem />
         <Switch>
-
           <Route exact path="/">
             <MainItem />
           </Route>
