@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/infoOngkir/static/css/main.c01a7793.chunk.css",
+    "main.js": "/infoOngkir/static/js/main.4a50ad35.chunk.js",
+    "main.js.map": "/infoOngkir/static/js/main.4a50ad35.chunk.js.map",
+    "runtime-main.js": "/infoOngkir/static/js/runtime-main.aa50d1df.js",
+    "runtime-main.js.map": "/infoOngkir/static/js/runtime-main.aa50d1df.js.map",
+    "static/css/2.67a8f8f6.chunk.css": "/infoOngkir/static/css/2.67a8f8f6.chunk.css",
+    "static/js/2.76edde57.chunk.js": "/infoOngkir/static/js/2.76edde57.chunk.js",
+    "static/js/2.76edde57.chunk.js.map": "/infoOngkir/static/js/2.76edde57.chunk.js.map",
+    "static/js/3.9ee93f69.chunk.js": "/infoOngkir/static/js/3.9ee93f69.chunk.js",
+    "static/js/3.9ee93f69.chunk.js.map": "/infoOngkir/static/js/3.9ee93f69.chunk.js.map",
+    "index.html": "/infoOngkir/index.html",
+    "static/css/2.67a8f8f6.chunk.css.map": "/infoOngkir/static/css/2.67a8f8f6.chunk.css.map",
+    "static/css/main.c01a7793.chunk.css.map": "/infoOngkir/static/css/main.c01a7793.chunk.css.map",
+    "static/js/2.76edde57.chunk.js.LICENSE.txt": "/infoOngkir/static/js/2.76edde57.chunk.js.LICENSE.txt",
+    "static/media/google-play-badge.f902960a.png": "/infoOngkir/static/media/google-play-badge.f902960a.png",
+    "static/media/video.7d92e2fc.mp4": "/infoOngkir/static/media/video.7d92e2fc.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa50d1df.js",
+    "static/css/2.67a8f8f6.chunk.css",
+    "static/js/2.76edde57.chunk.js",
+    "static/css/main.c01a7793.chunk.css",
+    "static/js/main.4a50ad35.chunk.js"
+  ]
+}
