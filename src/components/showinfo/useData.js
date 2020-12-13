@@ -6,8 +6,7 @@ export const getIdCity = async (namaKota) => {
   var dataId = "";
   var config = {
     method: "get",
-    url:
-      "https://api.rajaongkir.com/starter/city/?key=7f6c715726a9ed5d91a77626e6cd408d",
+    url: "/starter/city/?key=7f6c715726a9ed5d91a77626e6cd408d",
     headers: {
       Accept: "application/json",
       Authorization:
@@ -53,7 +52,7 @@ export const getData = async (origin, destination, weight, courier) => {
 
   return axios({
     method: "post",
-    url: "https://api.rajaongkir.com/starter/cost",
+    url: "/starter/cost",
     data: bodyFormData,
     headers: {
       Accept: "application/json",
