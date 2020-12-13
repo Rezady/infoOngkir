@@ -10,7 +10,6 @@ function FormItem() {
 
   return (
     <main class="form-item">
-      {console.log("heifirst")}
       <div class="container py-5">
         <form>
           <div class="form-group">

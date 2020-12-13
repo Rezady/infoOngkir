@@ -26,13 +26,11 @@ function NavbarItem() {
               <li class="nav-item">
                 <NavLink to="/" class="nav-link" aria-current="page">
                   Home
-                  <span class="sr-only">(current)</span>
                 </NavLink>
               </li>
               <li class="nav-item">
-                <NavLink to="/form" class="nav-link">
+                <NavLink to="/form" class="nav-link" aria-current="page">
                   Form
-                  <span class="sr-only">(current)</span>
                 </NavLink>
               </li>
             </ul>

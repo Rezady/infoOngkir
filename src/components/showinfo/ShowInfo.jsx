@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getData, getValueTable, getIdCity } from "./useData.js";
+import { getData } from "./useData.js";
 
 function ShowInfo() {
  
@@ -9,20 +9,21 @@ function ShowInfo() {
   let { alamatTujuan } = useParams();
   let { berat } = useParams();
 
+  const beratNumb = parseInt(berat);
+  
+  // mengambil nilai yang akan ditampilkan di tabel
   const [dataTable, setDataTable] = useState([{
     name: "",
     layanan: [],
     tarif: [],
   }]);
 
-  const idBerat = parseInt(berat);
-
   useEffect(() => {
     async function fetchData() {
       try {
 
         ["tiki", "jne", "pos"].forEach(async (data, index) => {
-            const hasil = await getData(alamatAsal, alamatTujuan, idBerat, data);
+            const hasil = await getData(alamatAsal, alamatTujuan, beratNumb, data);
             setDataTable(prevState => [...prevState, {
               name: hasil.name,
               layanan: hasil.layanan,
@@ -40,9 +41,7 @@ function ShowInfo() {
 
   return (
     <div class="container py-5">
-      {console.log("idalamatasal ", alamatAsal)}
-      {/* {console.log('datajne', dataJne)} */}
-
+     
       <table class="table table-hover">
         <thead>
           <tr>
@@ -51,12 +50,7 @@ function ShowInfo() {
             <th scope="col">Tarif</th>
           </tr>
         </thead>
-        <tbody id="target">
-          {/* {[useDataTiki, useDataPos, useDataJne].map((data) =>
-            valueTable(data)
-          )} */}
-          {console.log("firsttt")}
-          {/* {console.log(dataTable)} */}
+        <tbody id="target">         
           {
           dataTable.map(data => data.layanan.map((dataValue, key) => (
             <tr>
@@ -68,6 +62,7 @@ function ShowInfo() {
           }
         </tbody>
       </table>
+      
     </div>
   );
 }
