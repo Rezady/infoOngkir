@@ -60,6 +60,7 @@ export const getData = async (origin, destination, weight, courier) => {
       Authorization:
         "Bearer dndiHksWuSyknEICDkIBlAP9LDflmTtiuRFUdOg9KeSEPlbKnEA65dX57Vb2R3z4534vspYIkMjeFI6tlI1mrcVZYIEW5ZdSIN5O",
       "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
     },
   })
     .then((api) => {
