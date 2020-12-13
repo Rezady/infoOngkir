@@ -1,9 +1,8 @@
-// import React, { useState, useEffect } from "react";
 
 import axios from "axios";
 
 export const getIdCity = async (namaKota) => {
-  // const [idCity, setIdCity] = useState("");
+  
   var dataId = "";
   var config = {
     method: "get",
@@ -16,8 +15,6 @@ export const getIdCity = async (namaKota) => {
     },
   };
 
-  // useEffect(() => {
-
   try {
     const api = await axios(config);
     const dataApi = await api.data.rajaongkir.results;
@@ -25,7 +22,7 @@ export const getIdCity = async (namaKota) => {
     await dataApi.map((data) => {
       if (data.city_name === namaKota) {
         console.log(data.city_name);
-        // setIdCity(data.city_id);
+        
         dataId = data.city_id;
       }
     });
@@ -80,13 +77,3 @@ export const getData = async (origin, destination, weight, courier) => {
     });
 };
 
-export const getValueTable = async (origin, destination, weight, courier) => {
-  const varCallback = await getData(origin, destination, weight, courier);
-  await varCallback.layanan.map((dataValue, key) => (
-    <tr>
-      <td>{varCallback.name}</td>
-      <td>{dataValue}</td>
-      <td>{varCallback.tarif[key]}</td>
-    </tr>
-  ));
-};

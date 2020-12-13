@@ -21,17 +21,22 @@ function ShowInfo() {
   useEffect(() => {
     async function fetchData() {
       try {
-
         ["tiki", "jne", "pos"].forEach(async (data, index) => {
-            const hasil = await getData(alamatAsal, alamatTujuan, beratNumb, data);
-            setDataTable(prevState => [...prevState, {
+          const hasil = await getData(
+            alamatAsal,
+            alamatTujuan,
+            beratNumb,
+            data
+          );
+          setDataTable((prevState) => [
+            ...prevState,
+            {
               name: hasil.name,
               layanan: hasil.layanan,
               tarif: hasil.tarif,
-            }]);
-          })
-
-        
+            },
+          ]);
+        });
       } catch (err) {
         console.log("error", err);
       }
