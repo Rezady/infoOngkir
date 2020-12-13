@@ -1,0 +1,68 @@
+[debug] [2020-12-13T12:29:31.596Z] ----------------------------------------------------------------------
+[debug] [2020-12-13T12:29:31.598Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-12-13T12:29:31.598Z] CLI Version:   8.19.0
+[debug] [2020-12-13T12:29:31.598Z] Platform:      win32
+[debug] [2020-12-13T12:29:31.598Z] Node Version:  v15.3.0
+[debug] [2020-12-13T12:29:31.599Z] Time:          Sun Dec 13 2020 19:29:31 GMT+0700 (Western Indonesia Time)
+[debug] [2020-12-13T12:29:31.599Z] ----------------------------------------------------------------------
+[debug] [2020-12-13T12:29:31.599Z] 
+[debug] [2020-12-13T12:29:31.603Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-13T12:29:31.603Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\infoOngkir
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2020-12-13T12:34:45.737Z] ----------------------------------------------------------------------
+[debug] [2020-12-13T12:34:45.738Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-12-13T12:34:45.739Z] CLI Version:   8.19.0
+[debug] [2020-12-13T12:34:45.739Z] Platform:      win32
+[debug] [2020-12-13T12:34:45.739Z] Node Version:  v15.3.0
+[debug] [2020-12-13T12:34:45.740Z] Time:          Sun Dec 13 2020 19:34:45 GMT+0700 (Western Indonesia Time)
+[debug] [2020-12-13T12:34:45.740Z] ----------------------------------------------------------------------
+[debug] [2020-12-13T12:34:45.740Z] 
+[debug] [2020-12-13T12:34:45.746Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-13T12:34:45.746Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\infoOngkir
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-12-13T12:35:06.841Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-12-13T12:35:07.264Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 13 Dec 2020 12:35:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project infoongkir (infoongkir) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
