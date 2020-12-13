@@ -24,7 +24,6 @@ tambahan:
 - jika data tidak terpanggil dan tabel tidak menampilkan nilai, ada dua kemungkinan kondisi yang terjadi:
   1. key api yang tertera telah melewati batas harian.
      jika kondisi ini terjadi, bisa hubungi saya dan akan saya berikan key API baru
-     key api cadangan : 7f6c715726a9ed5d91a77626e6cd408d
   2. penulisan form alamat tidak sesuai dengan data di API
 
 
